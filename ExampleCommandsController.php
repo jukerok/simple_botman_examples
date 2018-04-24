@@ -13,7 +13,7 @@ use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 
 
-class JukerokCommandsController extends Controller
+class ExampleCommandsController extends Controller
 {
     
 
@@ -23,7 +23,7 @@ class JukerokCommandsController extends Controller
 	*/
 	public function handleSayHello($bot)
 	{
-		$bot->reply("Hello, I'm Jukerok!");
+		$bot->reply("Hello, I'm Testbot!");
 		$this->askName($bot);
 	}
 
@@ -48,7 +48,7 @@ class JukerokCommandsController extends Controller
         	#store name in session
     		$this->rawr =  session(['name' => $this->name]);
 			
-			JukerokCommandsController::tour($this);    		
+			ExampleCommandsController::tour($this);    		
     	});    		    		
 
 	}
@@ -69,7 +69,7 @@ class JukerokCommandsController extends Controller
 				$bot->say('My creator is a Web engineer that dljwka jkd wjk kj kjaj kjhdka jhwkjahkj wahkjwahkjwa ');
 				
 				
-				JukerokCommandsController::showPages($this);
+				ExampleCommandsController::showPages($this);
 			}
 			else
 			{

@@ -20,15 +20,15 @@ class BotManController extends Controller
     {
         $botman = app('botman');
 
-        $botman->hears('hello', 'App\Http\Controllers\JukerokCommandsController@handleSayHello');
+        $botman->hears('hello', 'App\Http\Controllers\ExampleCommandsController@handleSayHello');
 
-        $botman->hears('hey', 'App\Http\Controllers\JukerokCommandsController@handleSayHello');
+        $botman->hears('hey', 'App\Http\Controllers\ExampleCommandsController@handleSayHello');
 
-        $botman->hears('im {name}', 'App\Http\Controllers\JukerokCommandsController@handleHelloWithName');
+        $botman->hears('im {name}', 'App\Http\Controllers\ExampleCommandsController@handleHelloWithName');
 
-        $botman->hears('session', 'App\Http\Controllers\JukerokCommandsController@getSession');
+        $botman->hears('session', 'App\Http\Controllers\ExampleCommandsController@getSession');
 
-        $botman->hears('what is my name', 'App\Http\Controllers\JukerokCommandsController@tellName');
+        $botman->hears('what is my name', 'App\Http\Controllers\ExampleCommandsController@tellName');
 
 
 
